@@ -1,0 +1,28 @@
+.stats-container {
+  width: 100%;
+  background-color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.cards {
+  margin-bottom: 129px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: "100%";
+  justify-content: center;
+  align-items: center;
+}
+
+@media (width < 600px) {
+  .stat-card:last-child {
+    display: inline-flex;
+  }
+
+  .cards {
+    margin-bottom: 50px;
+  }
+}

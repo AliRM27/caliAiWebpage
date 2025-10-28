@@ -1,0 +1,32 @@
+.stat-card {
+  background-color: var(--color-secondary);
+  padding: 20px;
+  border-radius: 24px;
+  width: 400px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.stat-card:last-child {
+  display: none;
+}
+
+.stat-card:hover {
+  transition: all var(--transition-fast);
+}
+
+.stat-card:active {
+  transform: scale(0.9);
+}
+
+@media (width < 600px) {
+  .stat-card:last-child {
+    display: inline-flex;
+  }
+
+  .stat-card {
+    width: 200px;
+  }
+}
