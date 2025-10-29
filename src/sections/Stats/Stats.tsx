@@ -7,7 +7,7 @@ import { useState } from "react";
 import { StatCard } from "../../components/StatCard/StatCard";
 
 function Stats() {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number>(0);
 
   const handleCardClick = (index: number) => {
     if (activeIndex === index) return;
@@ -17,17 +17,17 @@ function Stats() {
   const statData = [
     {
       icon: MaskGroup,
-      title: "Active Users",
-      value: "50,000+",
+      desc: "Active Users",
+      title: "50,000+",
     },
-    { icon: meal, title: "Meals Tracked", value: "5,000,000+" },
-    { icon: earth, title: "Countries Wolrdwide", value: "38+" },
-    { icon: earth, title: "Goals Achived", value: "50,000+" },
+    { icon: meal, desc: "Meals Tracked", title: "5,000,000+" },
+    { icon: earth, desc: "Countries Wolrdwide", title: "38+" },
+    { icon: earth, desc: "Goals Achived", title: "50,000+" },
   ];
 
   return (
     <div className="stats-container">
-      <h1 style={{ marginBottom: 50, textAlign: "center" }}>
+      <h1 style={{ marginBottom: 50, textAlign: "center", fontSize: 35 }}>
         Join the Fastest-Growing Fitness Community
       </h1>
 
@@ -36,7 +36,7 @@ function Stats() {
           <StatCard
             key={index}
             title={i.title}
-            value={i.value}
+            value={i.desc}
             icon={i.icon}
             isFocused={activeIndex === index}
             onClick={() => handleCardClick(index)}

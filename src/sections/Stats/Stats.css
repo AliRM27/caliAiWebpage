@@ -4,22 +4,20 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 80px 40px;
 }
 
 .cards {
   margin-bottom: 129px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  width: "100%";
-  justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
-@media (width < 600px) {
-  .stat-card:last-child {
-    display: inline-flex;
+@media (width < 1000px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
   }
 
   .cards {

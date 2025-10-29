@@ -2,11 +2,15 @@
   background-color: var(--color-secondary);
   padding: 20px;
   border-radius: 24px;
-  width: 400px;
   gap: 20px;
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  height: "100%";
+}
+
+h3 {
+  font-size: 22px;
 }
 
 .stat-card:last-child {
@@ -21,12 +25,11 @@
   transform: scale(0.9);
 }
 
-@media (width < 600px) {
-  .stat-card:last-child {
-    display: inline-flex;
+@media (width < 500px) {
+  p {
+    font-size: 12px;
   }
-
-  .stat-card {
-    width: 200px;
+  h3 {
+    font-size: 18px;
   }
 }

@@ -59,3 +59,9 @@ button {
 button:active {
   transform: scale(0.9);
 }
+
+@media (width < 600px) {
+  h1 {
+    font-size: 28px !important;
+  }
+}
