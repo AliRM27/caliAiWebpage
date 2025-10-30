@@ -1,0 +1,107 @@
+.caliAiFix-container {
+  background-color: var(--color-bg);
+  width: "100%";
+  padding: 80px 80px;
+}
+
+.caliAiFix-innnerContainer {
+  background-color: var(--color-bg2);
+  border-radius: 92px;
+  display: flex;
+  padding: 60px 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  border: 1px solid white;
+  .caliAiFix-innerContainer_info-buttons_button {
+    border-radius: 60px;
+    padding: 25px 10px;
+    flex: 1;
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+
+.caliAiFix-innerContainer_info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: "100%";
+  align-items: center;
+  h1 {
+    font-size: 50px;
+  }
+}
+
+.caliAiFix-innerContainer_info-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+#caliAiFixh2 {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: 25px;
+  border-radius: 40px;
+  color: white;
+  width: 100%;
+}
+
+@media (width < 1320px) {
+  #caliAiFiximg {
+    width: 300px;
+  }
+
+  .caliAiFix-innnerContainer {
+    padding: 60px 60px;
+    gap: 50px;
+  }
+}
+
+@media (width < 1200px) {
+  #caliAiFixh2 {
+    font-size: 18px;
+  }
+
+  .caliAiFix-innerContainer_info {
+    h1 {
+      font-size: 35px;
+    }
+  }
+
+  .caliAiFix-innerContainer_info-buttons_button {
+    font-size: 13px !important;
+  }
+}
+
+@media (width < 1000px) {
+  .caliAiFix-innnerContainer {
+    flex-direction: column;
+  }
+
+  .caliAiFix-innerContainer_info-buttons_button {
+    font-size: 16px !important;
+  }
+}
+
+@media (width < 800px) {
+  .caliAiFix-container {
+    padding: 20px;
+  }
+  .caliAiFix-innnerContainer {
+    padding: 40px;
+    border-radius: 20px;
+  }
+  .caliAiFix-innerContainer_info-buttons {
+    flex-direction: column;
+    .caliAiFix-innerContainer_info-buttons_button {
+      font-size: 20px !important;
+    }
+  }
+
+  #caliAiFixh2 {
+    border-radius: 20px;
+  }
+}
