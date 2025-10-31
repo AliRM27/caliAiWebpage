@@ -12,11 +12,8 @@ function CaliAiFix() {
   ];
 
   const toggleSelection = (index: number) => {
-    setActiveIndices(
-      (prev) =>
-        prev.includes(index)
-          ? prev.filter((i) => i !== index) // remove if already selected
-          : [...prev, index] // add if not selected
+    setActiveIndices((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
     );
   };
 
