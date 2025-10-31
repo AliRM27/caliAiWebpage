@@ -1,0 +1,21 @@
+.premiumPlan-container {
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.plans {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (width < 800px) {
+  .plans {
+    flex-direction: column;
+    gap: 60px;
+    padding: 0px 20px;
+  }
+}

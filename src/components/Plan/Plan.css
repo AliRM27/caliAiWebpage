@@ -1,0 +1,131 @@
+.plan-card {
+  background-color: rgba(255, 255, 255, 0.462);
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding: 30px;
+  border-radius: 30px;
+  width: 40%;
+  gap: 30px;
+  position: relative;
+  h2 {
+    font-size: 35px;
+  }
+}
+
+#plan-card_period {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  span {
+    font-size: 15px;
+    background-color: #e7f3ff54;
+    padding: 10px 15px;
+    border-radius: 30px;
+  }
+}
+
+.plan-card_price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 20px;
+    gap: 10px;
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+  }
+  img {
+    width: 15px;
+  }
+}
+
+.plan-card_discount {
+  position: absolute;
+  top: -30px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.plan-card_info {
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+  ul {
+    list-style: none;
+    li {
+      display: flex;
+      gap: 15px;
+      padding: 10px;
+      align-items: center;
+    }
+  }
+}
+
+.plan-card:last-child {
+  background-color: var(--color-primary);
+  color: white;
+  .plan-card_price {
+    p {
+      background-color: white;
+      color: var(--color-primary);
+    }
+  }
+  .plan-card_info {
+    background-color: #1e7fe0;
+    border: 1px solid #52a9ff;
+  }
+}
+
+@media (width < 1200px) and (width > 800px) {
+  .plan-card_discount {
+    font-weight: 600;
+    font-size: 16px;
+    top: -20px;
+  }
+}
+
+@media (width < 1000px) {
+  .plan-card {
+    padding: 20px;
+    width: 46%;
+    padding-top: 40px;
+  }
+  .plan-card_price {
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (width < 800px) {
+  .plan-card {
+    width: 100%;
+  }
+}
+
+@media (width < 500px) {
+  .plan-card_discount {
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (width < 420px) {
+  .plan-card_price {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .plan-card {
+    gap: 15px;
+  }
+}

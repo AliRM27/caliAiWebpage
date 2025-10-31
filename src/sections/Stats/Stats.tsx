@@ -2,6 +2,7 @@ import "./Stats.css";
 import MaskGroup from "../../assets/svgs/MaskGroup.svg";
 import meal from "../../assets/svgs/meal.svg";
 import earth from "../../assets/svgs/earth.svg";
+import goals from "../../assets/svgs/goals.svg";
 
 import { useState } from "react";
 import { StatCard } from "../../components/StatCard/StatCard";
@@ -22,7 +23,7 @@ function Stats() {
     },
     { icon: meal, desc: "Meals Tracked", title: "5,000,000+" },
     { icon: earth, desc: "Countries Wolrdwide", title: "38+" },
-    { icon: earth, desc: "Goals Achived", title: "50,000+" },
+    { icon: goals, desc: "Goals Achived", title: "50,000+" },
   ];
 
   return (
